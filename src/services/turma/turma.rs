@@ -1,4 +1,4 @@
-use crate::service::{aluno::aluno::Aluno, aula::aula::Aula};
+use crate::services::{aluno::aluno::Aluno, aula::aula::Aula};
 
 #[derive(Debug)]
 // pub struct Turma<'a, 'b> {
