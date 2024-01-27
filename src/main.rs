@@ -62,7 +62,7 @@ fn main() {
 
         embed_migrations!("./migrations/");
 
-        embedded_migrations::run(&_connection).expect("Erro ao executar migrações");
+        // embedded_migrations::run(&_connection).expect("Erro ao executar migrações");
 
     let novo_aluno = NovoAluno {
         nome: "Andrews".to_string(),
