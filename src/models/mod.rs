@@ -1,1 +1,1 @@
-pub mod aluno_model;
+pub mod student_model;

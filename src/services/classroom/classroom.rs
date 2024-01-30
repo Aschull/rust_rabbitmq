@@ -1,4 +1,4 @@
-use crate::services::{aluno::aluno::Aluno, aula::aula::Aula};
+use crate::services::{student::student::Student, classies::classies::Classies};
 
 #[derive(Debug)]
 // pub struct Turma<'a, 'b> {
@@ -7,10 +7,10 @@ use crate::services::{aluno::aluno::Aluno, aula::aula::Aula};
 //     aulas: Vec<&'b Aula>,
 // }
 
-pub struct Turma {
-    nome: String,
-    alunos: Vec<Aluno>,
-    aulas: Vec<Aula>,
+pub struct Classroom {
+    name: String,
+    students: Vec<Student>,
+    classies: Vec<Classies>,
 }
 
 // impl<'a, 'b> Turma<'a, 'b> {
@@ -35,24 +35,24 @@ pub struct Turma {
 //     }
 // }
 
-impl Turma {
-    pub fn new(name: String, alunos: Vec<Aluno>, aulas: Vec<Aula>) -> Turma {
-        Turma {
-            nome: name,
-            alunos: alunos,
-            aulas: aulas,
+impl Classroom {
+    pub fn new(name: String, students: Vec<Student>, classies: Vec<Classies>) -> Classroom {
+        Classroom {
+            name: name,
+            students: students,
+            classies: classies,
         }
     }
 
     pub fn get_nome(&self) -> &String {
-        &self.nome
+        &self.name
     }
 
-    pub fn get_alunos(&self) -> &Vec<Aluno> {
-        &self.alunos
+    pub fn get_alunos(&self) -> &Vec<Student> {
+        &self.students
     }
 
-    pub fn get_aulas(&self) -> &Vec<Aula> {
-        &self.aulas
+    pub fn get_aulas(&self) -> &Vec<Classies> {
+        &self.classies
     }
 }

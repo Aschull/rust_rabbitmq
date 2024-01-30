@@ -1,11 +1,11 @@
 #[derive(Debug, Clone)]
-pub struct Aula {
+pub struct Classies {
     name: String,
 }
 
-impl Aula {
-    pub fn new(name: String) -> Aula {
-        Aula { name }
+impl Classies {
+    pub fn new(name: String) -> Classies {
+        Classies { name }
     }
 
     pub fn get_name(&self) -> &String {

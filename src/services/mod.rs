@@ -1,3 +1,3 @@
-pub mod aluno;
-pub mod aula;
-pub mod turma;
+pub mod student;
+pub mod classies;
+pub mod classroom;

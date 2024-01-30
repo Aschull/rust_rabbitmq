@@ -1,8 +1,8 @@
 // @generated automatically by Diesel CLI.
 
 diesel::table! {
-    alunos_table (id) {
+    students (id) {
         id -> Int4,
-        nome -> Varchar,
+        name -> Varchar,
     }
 }
